@@ -1,0 +1,56 @@
+@import "./tool";
+
+.title-default{
+  font-size: .24rem;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: .1rem;
+  &.title-default-small{
+    font-size: .2rem;
+  }
+  &:before{
+    content: '';
+    height: .2rem;
+    padding-right: .1rem;
+    border-left: .04rem solid #fff;
+  }
+}
+
+.title-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &.title-desc-orange{
+    >.desc{
+   }
+  }
+  >.title{
+    line-height: 1.2;
+    font-size: .16rem;
+    margin-bottom: .05rem;
+  }
+  >.desc{
+    line-height: 1.2;
+    font-size: .14rem;
+  }
+}
+
+.desc-title{
+  .title-desc;
+  >.desc{
+    font-size: .38rem;
+    margin-bottom: .15rem;
+  }
+  >.title{
+    margin-bottom: 0;
+    font-size: .2rem;
+    color: #fff;
+  }
+}
+
+.page-title{
+  font-size: 48px;
+  color: @black;
+  line-height: 1.5;
+  font-weight: 500;
+}

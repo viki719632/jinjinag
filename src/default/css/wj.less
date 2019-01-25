@@ -1,0 +1,62 @@
+@import "./tool";
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../font/font.woff'),
+  url('../font/font.woff2'); /* IE9+ */
+}
+
+* {
+  font-family: myFirstFont !important;
+}
+
+.side-bar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: .95rem;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  i{
+    cursor: pointer;
+  }
+}
+
+.page{
+  height: 100%;
+}
+
+.page-index{
+  padding-left: 2.85rem;
+  padding-top: 3.55rem;
+
+  .page-title{
+    margin-bottom: .5rem;
+  }
+
+  .index-swiper{
+    margin-left: -.95rem;
+    width: 14.6rem;
+    max-height: 5.6rem;
+    .swiper-slide{
+      a{
+        margin-bottom: .8rem;
+        .img-wrap(3.85rem,2.4rem);
+        display: inline-flex;
+        margin-left: .95rem;
+        img{
+          transition: all .3s;
+        }
+        &:hover{
+          img{
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+

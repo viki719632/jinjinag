@@ -1,0 +1,14 @@
+@import 'var';
+
+.iconGen(@icon,@width:10px,@height:10px){
+  background: url("@{iconDir}/@{icon}.png") no-repeat center;
+  width: @width;
+  height: @height;
+  background-origin:content-box;
+  background-size: @width @height;
+}
+
+.icon-nav{
+  .iconGen(icon-nav,.2rem,.3rem);
+}
+
